@@ -1,0 +1,31 @@
+#GitBlog配置文件，使用4个空格代替Tab
+---
+url: https://www.os4u.info
+title: Os4u.Info's Blog 
+subtitle: 记录IT技术点点滴滴
+theme: default
+enableCache: true
+highlight: true
+mathjax: false
+katex: false
+youyan:
+baiduAnalytics: a3b042e2f5290c2e2896276d96bd5d39
+keywords: IT,互联网,技术博客,Markdown博客,os4u.info
+description: >
+    使用GitBlog搭建的IT技术博客,主要记录工作学习的点点滴滴技术。
+version: 2.2
+author:
+    name: os4uinfo
+    email: os4uinfo@gmail.com
+    github: os4uinfo
+    weibo: 
+    avatar:
+blog:
+    recentSize: 5
+    pageSize: 6
+    pageBarSize: 5
+    allBlogsForPage: false
+text:
+    title: 介绍
+    intro: >
+          本博客使用GitBlog搭建的IT技术博客, 主要记录工作学习中的点点滴滴技术。欢迎你！
