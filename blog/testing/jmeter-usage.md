@@ -128,12 +128,14 @@ ENTRYPOINT ["./bin/jmeter", "-j", "/dev/stdou", "-s", \
 b) 部署更多的docker
 
 c)运行docker
-$ docker run -p 1099:1099 -p 1100:1100 hubuser/jmeter -Djava.rmi.server.hostname=dockerhost1
+$ docker run -p 1099:1099 -p 1100:1100 \
+hubuser/jmeter -Djava.rmi.server.hostname=dockerhost1
 
-$ docker run -p 1099:1099 -p 1100:1100 hubuser/jmeter -Djava.rmi.server.hostname=dockerhost2
+$ docker run -p 1099:1099 -p 1100:1100 \
+hubuser/jmeter -Djava.rmi.server.hostname=dockerhost2
 
 d)运行JMeter客户端
 $ jmeter -Jremote_hosts=dockerhost1, dockerhost2
 ```
 
-更多关于分布式测试参考：[http://jmeter.apache.org/usernamual/remote-test.html](http://jmeter.apache.org/usernamual/remote-test.html)
+更多关于分布式测试参考：[https://jmeter.apache.org/usermanual/remote-test.html](https://jmeter.apache.org/usermanual/remote-test.html)
