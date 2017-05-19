@@ -1,7 +1,7 @@
 <!--
 author: os4uinfo
 head: https://os4u.info/blog/img/sun.png
-date: 2017-05-17
+date: 2017-05-19
 title: Centos 7 上安装Kubernetes集群（转载）
 tags: Docker
 images: https://os4u.info/blog/img/sun.png
