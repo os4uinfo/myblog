@@ -214,4 +214,93 @@ NAME             LABELS                                  STATUS
 
 至此，kubernetes 的集群环境搭建完成。
 
-原文地址：[点击访问](https://severalnines.com/blog/installing-kubernetes-cluster-minions-centos7-manage-pods-services)
+下面介绍kubernetes的应用
+
+#### 利用Kubernetes创建pods和service
+
+1.创建pods
+
+创建之前，需要定义yaml文件。然后使用kubectl命令根据定义的文件来创建pods
+
+步骤如下：
+
+```
+$ mkdir pods
+$ cd pods
+$ vim nginx.yaml
+```
+添加如下内容：
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-test
+  labels:
+    name: nginx-test
+spec:
+  containers:
+    - resources:
+        limits :
+          cpu: 1
+      image: 192.168.81.210:5000/uet/nginx:centos7
+      name: nginx-test
+      ports:
+        - containerPort: 80
+          hostPort: 80
+          name: nginx-test
+```
+
+创建pods
+
+```
+$ kubectl create -f nginx.yaml
+
+```
+
+获取pods
+
+```
+$ kubectl get pods
+NAME         READY     STATUS    RESTARTS   AGE
+nginx-test   1/1       Running   0          12s
+```
+
+2.创建service
+
+创建service.yaml文件，内容如下：
+```
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: nginx-test
+  name: nginx-test
+spec:
+  externalIPs:
+    - 20.0.0.8
+  ports:
+    - port: 80
+  selector:
+    name: nginx-test
+```
+
+开启服务
+
+```
+$ kubectl create -f nginx-service.yaml
+```
+
+获取服务信息
+
+```
+$ kubectl get services
+NAME         CLUSTER-IP       EXTERNAL-IP   PORT(S)   AGE
+kubernetes   10.254.0.1       <none>        443/TCP   16d
+nginx-test   10.254.229.220   20.0.0.8      80/TCP    9s
+```
+
+使用浏览器，通过20.0.0.8访问
+http://20.0.0.8/
+
+有删改，原文地址：[点击访问](https://severalnines.com/blog/installing-kubernetes-cluster-minions-centos7-manage-pods-services)
