@@ -76,7 +76,7 @@ $ kitchen login default-CentOS70
 至此，Test Kitchen管理沙盒测试环境 搭建完成。
 
 
-#### vagrant 单独使用，创建沙河环境
+#### vagrant 单独使用，创建沙盒环境
 
 1.把下载的box添加到vagrant中
 
