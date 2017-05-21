@@ -32,8 +32,32 @@ $ VBoxManage --version
 ```
 $ wget http://cloud.centos.org/centos/7/vagrant/x86_64/images/CentOS-7-x86_64-Vagrant-1704_01.VirtualBox.box
 ```
+4.把下载的box添加到vagrant中
 
-4.初始化kitchen
+编写metadata.json文件，格式如下：
+
+```
+{
+    "name": "CentOS7",
+    "version": [{
+        "version": "1704.01",
+        "providers": [{
+             "name": "virtualbox",
+             "url": "file:///data/vagrant/CentOS-7-x86_64-Vagrant-1704_01.VirtualBox.box"
+         }]
+    }]
+}
+
+--------------------------------------------
+说明：
+name 是镜像名称
+version 版本描述信息
+version.version 是版本号
+version.providers 是配置提供者信息，如此处是virtualbox
+version.url 这里可以是http协议，也可以是本地file协议
+```
+
+5.初始化kitchen
 
 ```
 $ kitchen init --create-gemfile
@@ -41,7 +65,7 @@ $ bundle install
 
 ```
 
-5.配置.kitchen.yml
+6.配置.kitchen.yml
 
 ```
 ---
@@ -54,8 +78,8 @@ provisioner:
 platforms:
   - name: CentOS7.3
     drivers:
-      box: CentOS7
-      box_url: /data/vagrant/CentOS-7-x86_64-Vagrant-1704_01.VirtualBox.box
+      box: CentOS7 //此处的box名称是与上面导入的box名称一致
+  - name: CentOS6.8 //默认会从互联网上下载对应的box
 suites:
   - name: default
     run_list:
@@ -63,7 +87,7 @@ suites:
     
 ```
 
-6.创建虚拟机，并登陆
+7.创建虚拟机，并登陆
 
 ```
 $ kitchen list
