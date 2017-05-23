@@ -1,7 +1,7 @@
 <!--
 author: os4uinfo
 head: https://os4u.info/blog/img/sun.png
-date: 2017-05-20
+date: 2017-05-23
 title: DNS相关知识
 tags: DNS
 images: https://os4u.info/blog/img/sun.png
