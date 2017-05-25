@@ -198,3 +198,19 @@ tcpdump输出内容解读
 ![tcpdump-usage](https://www.os4u.info/blog/linux/images/tcpdump.png)
 
 
+```
+1) -A ASCII形式显示数据包内容
+2) -XX 显示网络包内容
+3) icmp[0:2]==0x0301 目标不可达
+4) TCP协议的SYN，ACK和FIN 
+tcp[tcpflags] & tcp-syn
+tcp[tcpflags] & tcp-ack
+tcp[tcpflags] & tcp-fin
+5）-D 列出所有可选择抓包对象
+6) 抓取syn-ack
+tcp[13] == 18
+7) 抓取端口区间
+tcpdump -i enp3so -nn 'portrange 52-55' -c 1 -xx
+
+```
+
