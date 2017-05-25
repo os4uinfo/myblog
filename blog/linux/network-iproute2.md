@@ -7,7 +7,7 @@ tags: Network
 images: https://os4u.info/blog/img/sun.png
 category: Network
 status: publish
-summary: 了解iproute2相关知识系列---dig应用
+summary: 了解iproute2相关知识系列---iproute2应用
 -->
 
 ![dns-dig-usage](https://www.os4u.info/blog/linux/images/dns-dig-usage.jpg)
