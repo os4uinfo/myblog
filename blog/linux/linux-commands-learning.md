@@ -3,9 +3,9 @@ author: os4uinfo
 head: https://os4u.info/blog/img/sun.png
 date: 2017-05-17
 title: Linux 命令之网络
-tags: markdown
+tags: Network
 images: https://os4u.info/blog/img/sun.png
-category: Linux
+category: Network
 status: publish
 summary: Linux运维中，常用命令解决实际的运维问题，持续更新，总结中。
 -->
