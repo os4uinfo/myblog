@@ -1,7 +1,7 @@
 <!--
 author: kosamari
 head: https://os4u.info/blog/img/sun.png
-date: 2017-05-12
+date: 2017-06-04
 title: yum server on centos.
 tags: yum
 images: https://os4u.info/blog/img/sun.png
