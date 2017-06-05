@@ -1,5 +1,5 @@
 <!--
-author: kosamari
+author: os4uinfo
 head: https://os4u.info/blog/img/sun.png
 date: 2017-06-04
 title: yum server on centos.
