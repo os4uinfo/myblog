@@ -24,6 +24,10 @@ summary: gitlab与GoCD的集成。
 
 ##### 2) 配置gitlab，创建一个api keys
 ![create keys](https://www.os4u.info/blog/ci-cd-tools/images/gocd-gitlab-step-0.png)
+
+```
+【tips】用gitlab的管理员账号设置的api keys，全部gitlab成员可以以普通用户身份登录gocd。
+```
 ##### 3）配置go-server
 
 ```
