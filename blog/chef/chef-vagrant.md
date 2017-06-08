@@ -39,7 +39,7 @@ $ wget http://cloud.centos.org/centos/7/vagrant/x86_64/images/CentOS-7-x86_64-Va
 ```
 {
     "name": "CentOS7",
-    "version": [{
+    "versions": [{
         "version": "1704.01",
         "providers": [{
              "name": "virtualbox",
@@ -51,10 +51,10 @@ $ wget http://cloud.centos.org/centos/7/vagrant/x86_64/images/CentOS-7-x86_64-Va
 --------------------------------------------
 说明：
 name 是镜像名称
-version 版本描述信息
-version.version 是版本号
-version.providers 是配置提供者信息，如此处是virtualbox
-version.url 这里可以是http协议，也可以是本地file协议
+versions 版本描述信息
+versions.version 是版本号
+versions.providers 是配置提供者信息，如此处是virtualbox
+versions.url 这里可以是http协议，也可以是本地file协议
 ```
 
 5.初始化kitchen
@@ -100,7 +100,7 @@ $ kitchen login default-CentOS70
 至此，Test Kitchen管理沙盒测试环境 搭建完成。
 
 
-#### vagrant 单独使用，创建沙河环境
+#### vagrant 单独使用，创建沙盒环境
 
 1.把下载的box添加到vagrant中
 
@@ -109,7 +109,7 @@ $ kitchen login default-CentOS70
 ```
 {
     "name": "CentOS7.0",
-    "version": [{
+    "versions": [{
         "version": "1704.01",
         "providers": [{
              "name": "virtualbox",
@@ -121,10 +121,10 @@ $ kitchen login default-CentOS70
 --------------------------------------------
 说明：
 name 是镜像名称
-version 版本描述信息
-version.version 是版本号
-version.providers 是配置提供者信息，如此处是virtualbox
-version.url 这里可以是http协议，也可以是本地file协议
+versions 版本描述信息
+versions.version 是版本号
+versions.providers 是配置提供者信息，如此处是virtualbox
+versions.url 这里可以是http协议，也可以是本地file协议
 ```
 
 2.执行命令导入
