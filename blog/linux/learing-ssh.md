@@ -87,3 +87,7 @@ host C
   port 2001
 ```
 如果配置后，上述`$ ssh -p 2001 localhost`命令可以替换为：`ssh C`
+
+
+参考：
+[ssh-agent](http://linux.101hacks.com/unix/ssh-agent/)
