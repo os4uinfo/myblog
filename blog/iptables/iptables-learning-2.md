@@ -40,10 +40,10 @@ $IPTABLES -P INPUT DROP
 $IPTABLES -P OUTPUT DROP
 $IPTABLES -P FORWARD DROP
 ### load connection-tracking modules
-$MODEPROBE ip_contrack
-$MODEPROBE iptable_nat
-$MODEPROBE ip_conntrack_ftp
-$MODEPROBE ip_nat_ftp
+$MODPROBE ip_conntrack
+$MODPROBE iptable_nat
+$MODPROBE ip_conntrack_ftp
+$MODPROBE ip_nat_ftp
 
 -------------------------------------
 [注] 
@@ -66,15 +66,15 @@ $IPTABLES -A INPUT -m state --state INVALID -j DROP
 $IPTABLES -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 
 ### anti-spoofing rules
-$IPTABLES -A INPUT -i eth1 -s ! $INT_NET -j LOG --log-prefix "SPOOFED PKT"
-$IPTABLES -A INPUT -i eth1 -s ! $INT_NET -j DROP
+$IPTABLES -A INPUT -i eth1 ! -s $INT_NET -j LOG --log-prefix "SPOOFED PKT"
+$IPTABLES -A INPUT -i eth1 ! -s $INT_NET -j DROP
 
 ### ACCEPT rules
 $IPTABLES -A INPUT -i eth1 -p tcp -s $INT_NET --dport 22 --syn -m state --state NEW -j ACCEPT
 $IPTABLES -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
 
 ### default INPUT LOG rule
-$IPTABLES -A INPUT -i ! log -j LOG --log-prefix "DROP" --log-ip-options --log-tcp-options
+$IPTABLES -A INPUT ! -i lo -j LOG --log-prefix "DROP" --log-ip-options --log-tcp-options
 
 ```
 ##### 4) OUTPUT链
@@ -97,11 +97,11 @@ $IPTABLES -A OUTPUT -p tcp --dport 43 --syn -m state --state NEW -j ACCEPT
 $IPTABLES -A OUTPUT -p tcp --dport 80 --syn -m state --state NEW -j ACCEPT
 $IPTABLES -A OUTPUT -p tcp --dport 443 --syn -m state --state NEW -j ACCEPT
 $IPTABLES -A OUTPUT -p tcp --dport 4321 --syn -m state --state NEW -j ACCEPT
-$IPTABLES -A OUTPUT -p udp --dport 53 --syn -m state --state NEW -j ACCEPT
+$IPTABLES -A OUTPUT -p udp --dport 53 -m state --state NEW -j ACCEPT
 $IPTABLES -A OUTPUT -p icpm --icmp-type echo-request -j ACCEPT
 
 ### default OUTPUT LOG rule
-$IPTABLES -A OUTPUT -o ! lo -j LOG --log-prefix "DROP " --log-ip-options --log-tcp-options
+$IPTABLES -A OUTPUT ! -o lo -j LOG --log-prefix "DROP " --log-ip-options --log-tcp-options
 
 ```
 
@@ -118,8 +118,8 @@ $IPTABLES -A FORWARD -m state --state INVALID -j DROP
 $IPTABLES -A FORWARD -m state --state ESTABLISHED,RELATED -j ACCEPT
 
 ### anti-spoofing rules
-$IPTABLES -A FORWARD -i eth1 -s ! $INT_NET -j LOG --log-prefix "SPOOFED PKT"
-$IPTABLES -A FORWARD -i eth1 -s ! $INT_NET -j DROP
+$IPTABLES -A FORWARD -i eth1 ! -s $INT_NET -j LOG --log-prefix "SPOOFED PKT"
+$IPTABLES -A FORWARD -i eth1 ! -s $INT_NET -j DROP
 
 ### ACCEPT rules
 $IPTABLES -A FORWARD -p tcp -i eth1 -s $INT_NET --dport 21 --syn -m state --state NEW -j ACCEPT
@@ -129,11 +129,11 @@ $IPTABLES -A FORWARD -p tcp -i eth1 -s $INT_NET --dport 43 --syn -m state --stat
 $IPTABLES -A FORWARD -p tcp --dport 80 --syn -m state --state NEW -j ACCEPT
 $IPTABLES -A FORWARD -p tcp --dport 443 --syn -m state --state NEW -j ACCEPT
 $IPTABLES -A FORWARD -p tcp -i eth1 -s $INT_NET --dport 4321 --syn -m state --state NEW -j ACCEPT
-$IPTABLES -A FORWARD -p udp --dport 53 --syn -m state --state NEW -j ACCEPT
+$IPTABLES -A FORWARD -p udp --dport 53 -m state --state NEW -j ACCEPT
 $IPTABLES -A FORWARD -p icmp --icmp-type echo-request -j ACCEPT
 
 ### default log rule
-$IPTABLES -A FORWARD -i ! log -j LOG --log-prefix "DROP " --log-ip-options --log-tcp-options
+$IPTABLES -A FORWARD ! -i lo  -j LOG --log-prefix "DROP " --log-ip-options --log-tcp-options
 
 ```
 
