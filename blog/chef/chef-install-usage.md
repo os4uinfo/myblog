@@ -508,3 +508,7 @@ Chef Client运行完相关配置后，运行结果是成功还是失败，成功
 
 
 **参考资料：** [IBM chef](https://www.ibm.com/developerworks/cn/cloud/library/1407_caomd_chef/)
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注该公众号 
