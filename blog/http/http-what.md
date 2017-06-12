@@ -17,3 +17,7 @@ came from [kosamari](https://twitter.com/kosamari)
 ![what-is-htpp-1](https://www.os4u.info/blog/http/images/http-what-2.jpg)
 
 ![what-is-htpp-1](https://www.os4u.info/blog/http/images/http-what-3.jpg)
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 

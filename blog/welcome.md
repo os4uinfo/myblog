@@ -23,4 +23,4 @@ summary: 这是我的博客网站，记录个人的工作学习思想。在IT行
 
 That's all
 
-![me](https://www.os4u.info/blog/img/me.gif)
+![me](https://www.os4u.info/blog/img/me.gif) ![微信公众号](https://www.os4u.info/wx.jpg)  

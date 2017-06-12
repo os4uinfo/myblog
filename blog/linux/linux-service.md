@@ -234,9 +234,9 @@ init | init 0 用于关机 init 6用于重启
 
 ```
 立即关机
-#  shutdown -h now
+# shutdown -h now
 立即重启
-#  shutdown -r now
+# shutdown -r now
 定时关机
 # shutdown -h 23:30
 15分钟后关机
@@ -272,6 +272,7 @@ last命令从wtmp获取，utmp当前用户的信息w命令来源
 shutdown -k  now "warning, I'll shutdown" 提示而已，不会真关机
 
 ```
+
 
 
 ![微信公众号](https://www.os4u.info/wx.jpg) 

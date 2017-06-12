@@ -28,6 +28,7 @@ summary: Linux security
 ##### Other methods
 
 login into localhost
+
 ```
 step 1:
 [user@localhost]$ ssh -R 1337:localhsot:22 root@xxx.xxx.xxx.xx
@@ -66,3 +67,9 @@ ClientAliveCountMax 9999
 
 -----
 Reference: [Hacking Exposed Linux 3rd - JOEL SCAMBRAY_STUART MCCLURE_GEORGE KURT](http://www.cs.ucf.edu/~hlugo/cis4361/private/supplementals/Hacking%20Exposed%20Linux%203rd%20-%20JOEL%20SCAMBRAY_STUART%20MCCLURE_GEORGE%20KURT.pdf)
+
+
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 

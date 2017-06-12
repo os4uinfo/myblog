@@ -304,3 +304,10 @@ nginx-test   10.254.229.220   20.0.0.8      80/TCP    9s
 http://20.0.0.8/
 
 有删改，原文地址：[点击访问](https://severalnines.com/blog/installing-kubernetes-cluster-minions-centos7-manage-pods-services)
+
+
+
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 
