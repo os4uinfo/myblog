@@ -14,7 +14,7 @@ summary: Chef 是一款自动化服务器配置管理工具,理论上可以对�
 # Chef 的安装与使用
 
 
-<center>![](https://www.os4u.info/blog/chef/images/start_chef.svg)</center>
+![](https://www.os4u.info/blog/chef/images/start_chef.svg)
 
 Chef是一款自动化服务器配置管理工具，可以对所管理的对象实行自动化配置，如系统管理，安装软件等。Chef由三大组件组成：Chef Server、Chef Workstation和Chef Node。
 
@@ -308,7 +308,7 @@ Chef Server为每个客户端（Workstation，Node 或是其他向 Chef Server�
 
 认证过程如下图所示，
 
-<center>![图 1 Chef 认证流程](https://www.ibm.com/developerworks/cn/cloud/library/1407_caomd_chef/image002.png)</center>
+![图 1 Chef 认证流程](https://www.ibm.com/developerworks/cn/cloud/library/1407_caomd_chef/image002.png)
 
 <center> 图 1 Chef 认证流程 </center>
 
