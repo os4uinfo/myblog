@@ -355,73 +355,14 @@ Chef Server为每个客户端（Workstation，Node 或是其他向 Chef Server�
 
 * 表 1 Chef Server提供的Node资源REST API
 
-	```
-	HTTP METHOD	URL	REQUEST BODY	RESPONSE BODY
-	GET	/nodes		{
-	"latte": "http://localhost:4000/nodes/latte"
-	}
-	POST	/nodes	{
-	"name": "latte",
-	"chef_type": "node",
-	"json_class": "Chef::Node",
-	"attributes": {
-	"hardware_type": "laptop"
-	},
-	"overrides": {},
-	"defaults": {},
-	"run_list": [ "recipe[unicorn]" ]
-	}
-	{
-	"uri": "http://localhost:4000/nodes/latte"
-	}
-	DELETE	/nodes/NAME		{
-	"overrides": {},
-	"name": "latte",
-	"chef_type": "node",
-	"json_class": "Chef::Node",
-	"attributes": {
-	"hardware_type": "laptop"
-	},
-	"run_list": [
-	"recipe[apache2]"
-	],
-	"defaults": {}
-	}
-	GET	/nodes/NAME		{
-	"name": "node_name",
-	"chef_environment": "_default",
-	"run_list": [
-	"recipe[recipe_name]"
-	]
-	"json_class": "Chef::Node",
-	"chef_type": "node",
-	"automatic": { ... },
-	"normal": { "tags": [ ] },
-	"default": { },
-	"override": { }
-	}
-	PUT	/nodes/NAME	{
-	"overrides": {},
-	"name": "latte",
-	"chef_type": "node",
-	"json_class": "Chef::Node",
-	"attributes": {
-	"hardware_type": "laptop"
-	},
-	"run_list": [
-	'recipe[cookbook_name::recipe_name],
-	role[role_name]'
-	],
-	"defaults": {}
-	}
-	Response codes:
-	
-	200 OK
-	401 Unauthorized
-	403 Forbidden
-	404 Not Found
-	413 Request entity too large
-	```
+HTTP METHOD | 	URL	| REQUEST BODY	| RESPONSE BODY
+---------|---------|-----|----
+	GET |	/nodes	|	 |{"latte": "http://localhost:4000/nodes/latte" }
+	POST |	/nodes |	{ "name": "latte",	"chef_type": "node", "json_class": "Chef::Node",	"attributes": {	"hardware_type": "laptop" }, "overrides": {}	"defaults": {},	"run_list": [ "recipe[unicorn]" ] }| {	"uri": "http://localhost:4000/nodes/latte" } 
+	DELETE | 	/nodes/NAME |	 |	{	"overrides": {},	"name": "latte",	"chef_type": "node",	"json_class": "Chef::Node",	"attributes": { "hardware_type": "laptop" }, "run_list": [ 	"recipe[apache2]"	],	"defaults": {} } 
+	GET	 | /nodes/NAME	|	| { "name": "node_name",	"chef_environment": "_default",	"run_list": [	"recipe[recipe_name]"	] 	"json_class": "Chef::Node",	"chef_type": "node",	"automatic": { ... },	"normal": { "tags": [ ] },	"default": { },	"override": { } }
+	PUT |	/nodes/NAME | 	{ "overrides": {},	"name": "latte",	"chef_type": "node",	"json_class": "Chef::Node",	"attributes": {	"hardware_type": "laptop"	},	"run_list": [	'recipe[cookbook_name::recipe_name],	role[role_name]'	],	"defaults": {}	} | 	Response codes:	200 OK 	401 Unauthorized	403 Forbidden	404 Not Found	413 Request entity too large
+
 	
 通过调用Chef的REST API，就可以完成对Chef资源的管理。
 
