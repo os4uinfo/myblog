@@ -99,3 +99,10 @@ restorecon -v /srv/www/html/file.html
 restorecon reset /srv/www/html/file.html context unconfined_u:object_r:user_home_t:s0->system_u:object_r:httpd_sys_content_t:s0
 semanage fcontext -a -t httpd_sys_content_t "/web(/.*)?" //新建一条规则，指定/web目录及其下的所有文件的扩展属性为httpd_sys_content_t
 ```
+
+
+
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 

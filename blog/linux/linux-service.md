@@ -272,3 +272,8 @@ last命令从wtmp获取，utmp当前用户的信息w命令来源
 shutdown -k  now "warning, I'll shutdown" 提示而已，不会真关机
 
 ```
+
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 

@@ -214,3 +214,8 @@ tcpdump -i enp3so -nn 'portrange 52-55' -c 1 -xx
 
 ```
 
+
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 

@@ -68,3 +68,10 @@ id:      payment
 $ knife data bag show api_keys payment --secret-file encrypted_data_bag_secret
 
 ```
+
+
+*** 
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 

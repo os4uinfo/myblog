@@ -149,3 +149,8 @@ $ vagrant up // 启动
 $ vagrant ssh // 登陆机器
 
 ```
+*** 
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 
