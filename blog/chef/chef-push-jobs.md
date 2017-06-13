@@ -102,6 +102,8 @@ knife job start --timeout 10 'chef-client' openstack-block
 
 ***参考资料：***
 
+[https://d2avhevdwylo4t.cloudfront.net/reporting.html](https://d2avhevdwylo4t.cloudfront.net/reporting.html)
+
 [https://blog.chef.io/2015/03/16/using-chef-supermarket-a-guided-tour/](https://blog.chef.io/2015/03/16/using-chef-supermarket-a-guided-tour/)
 
 [https://docs.chef.io/knife_bootstrap.html](https://docs.chef.io/knife_bootstrap.html)
