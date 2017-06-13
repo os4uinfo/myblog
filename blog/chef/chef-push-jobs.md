@@ -12,6 +12,8 @@ summary: Chef 是一款自动化服务器配置管理工具,理论上可以对�
 
 # push-jobs安装使用
 
+![](https://www.os4u.info/blog/chef/images/overview_push_jobs_states.png)
+
 1) 在chef server端安装push-job-server和reporing组件，方便后续web查看执行报告。
 
 ```
