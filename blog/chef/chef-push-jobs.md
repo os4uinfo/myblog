@@ -98,3 +98,15 @@ knife job status <job id>
 knife job output
 knife job start --timeout 10 'chef-client' openstack-block
 ```
+
+***参考资料：***
+
+[https://blog.chef.io/2015/03/16/using-chef-supermarket-a-guided-tour/](https://blog.chef.io/2015/03/16/using-chef-supermarket-a-guided-tour/)
+
+[https://docs.chef.io/knife_bootstrap.html](https://docs.chef.io/knife_bootstrap.html)
+
+[https://docs.chef.io/push_jobs.html](https://docs.chef.io/push_jobs.html)
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 
