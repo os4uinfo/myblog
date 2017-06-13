@@ -10,7 +10,6 @@ status: publish
 summary: Chef 是一款自动化服务器配置管理工具,理论上可以对服务器做任何配置,包括系统管理、安装软件等,近来已被越来越多地应用到云环境的自动化部署上。运维必备自动化神器之一，所以还是要学习下。
 -->
 
-# push-jobs安装使用
 
 ![](https://www.os4u.info/blog/chef/images/overview_push_jobs_states.png)
 
