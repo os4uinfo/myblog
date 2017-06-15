@@ -41,3 +41,8 @@ func main() {
 ---
 ### 2. 补充中...
 ![golang](https://www.os4u.info/blog/programing/golang/images/golang_blog.jpg)
+
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 

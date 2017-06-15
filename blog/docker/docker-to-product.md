@@ -33,3 +33,10 @@ Theo Schlossnagle将web运维归结为4个方面：知识、工具、经验和�
 ##### 扩展应用
 
 ![microservice-authentication-and-authorisation-large-scaling-architecture](https://www.os4u.info/blog/docker/images/microservice-authentication-and-authorisation-large-scaling-architecture.jpg)
+
+
+
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 

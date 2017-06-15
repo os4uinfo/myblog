@@ -65,3 +65,8 @@ wget 配置文件位置
 
 --waitretry=seconds 请求失败重试时间
 ```
+
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 

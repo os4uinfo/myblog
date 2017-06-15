@@ -426,3 +426,9 @@ registry的用户名密码文件可以通过htpasswd来生成：
 	}
 }
 ```
+
+
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 

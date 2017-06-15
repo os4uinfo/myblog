@@ -49,3 +49,8 @@ b. 配置gitlab插件
 c. 登录成功界面
 ```
 ![configure plugins](https://www.os4u.info/blog/ci-cd-tools/images/gocd-gitlab-step-3.png)
+
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 

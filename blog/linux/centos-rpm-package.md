@@ -176,3 +176,9 @@ centos-ue-yum-source.noarch : CentOS yum server by UE.ltd
 [rpm-build-package-example](http://www.thegeekstuff.com/2015/02/rpm-build-package-example/)
 
 [create-rpm-of-your-own-script-in-centosredhat](https://tecadmin.net/create-rpm-of-your-own-script-in-centosredhat/#)
+
+
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 

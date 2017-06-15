@@ -139,3 +139,7 @@ $ jmeter -Jremote_hosts=dockerhost1, dockerhost2
 ```
 
 更多关于分布式测试参考：[https://jmeter.apache.org/usermanual/remote-test.html](https://jmeter.apache.org/usermanual/remote-test.html)
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 

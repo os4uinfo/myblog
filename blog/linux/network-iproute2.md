@@ -111,3 +111,8 @@ iproute2系列工具对GRE隧道等新技术支持非常好。
 ```
 $ ip -6 addr show dev eth0
 ```
+
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 
