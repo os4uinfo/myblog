@@ -9,7 +9,6 @@ category: Docker
 status: publish
 summary: 搭建第一个Docker应用栈
 -->
-# 搭建第一个Docker应用栈
 
 ## 应用栈架构
 本应用栈架构如下：
