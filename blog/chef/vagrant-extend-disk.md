@@ -1,7 +1,7 @@
 <!--
 author: os4uinfo
 head: https://os4u.info/blog/img/sun.png
-date: 2017-05-21
+date: 2017-06-16
 title: vagrant管理虚拟机--扩展磁盘
 tags: Chef
 images: https://os4u.info/blog/img/sun.png
