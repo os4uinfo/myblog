@@ -55,6 +55,11 @@ $ vagrant up
 略
 ```
 
+### 参考资料：
+> [https://tvi.al/resize-sda1-disk-of-your-vagrant-virtualbox-vm/](https://tvi.al/resize-sda1-disk-of-your-vagrant-virtualbox-vm/)
+> 
+> [http://blog.csdn.net/zxjxingkong/article/details/62419379](http://blog.csdn.net/zxjxingkong/article/details/62419379)
+
 
 ![微信公众号](https://www.os4u.info/wx.jpg) 
 
