@@ -405,3 +405,8 @@ listen redis_proxy
 结果如下图
 
 ![](https://www.os4u.info/blog/docker/images/docker-app-stack-result.png)
+
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 
