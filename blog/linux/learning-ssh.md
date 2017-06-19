@@ -3,9 +3,9 @@ author: os4uinfo
 head: https://os4u.info/blog/img/sun.png
 date: 2017-06-10
 title: ssh的一些使用
-tags: linux 
+tags: ssh 
 images: https://os4u.info/blog/img/sun.png
-category: linux
+category: Linux
 status: publish
 summary: ssh学习，本节主要介绍ssh的一些技巧。
 -->
