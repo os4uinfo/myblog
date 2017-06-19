@@ -1,7 +1,7 @@
 <!--
 author: os4uinfo
 head: https://os4u.info/blog/img/sun.png
-date: 2017-05-11
+date: 2017-06-19
 title: Golang 使用笔记（不断更新中）
 tags: golang
 images: https://os4u.info/blog/img/sun.png
@@ -39,8 +39,50 @@ func main() {
 }
 ```
 ---
-### 2. 补充中...
-![golang](https://www.os4u.info/blog/programing/golang/images/golang_blog.jpg)
+### 2. 时间转换
+
+```
+package main
+
+import (
+	"fmt"
+
+	"time"
+)
+
+func main() {
+
+	//获取时间戳
+
+	timestamp := time.Now().Unix()
+
+	fmt.Println(timestamp)
+
+	//格式化为字符串,tm为Time类型
+
+	tm := time.Unix(timestamp, 0)
+
+	fmt.Println(tm.Format("2006-01-02 15:04:05"))
+
+	fmt.Println(tm.Format("02/01/2006 15:04:05 PM"))
+
+	//从字符串转为时间戳，第一个参数是格式，第二个是要转换的时间字符串
+
+	tm2, _ := time.Parse("01/02/2006", "02/08/2015")
+
+	fmt.Println(tm2.Unix())
+
+}
+```
+运行后结果为：
+
+```
+1497836281
+2017-06-19 09:38:01
+19/06/2017 09:38:01 AM
+1423353600
+```
+
 
 
 ![微信公众号](https://www.os4u.info/wx.jpg) 
