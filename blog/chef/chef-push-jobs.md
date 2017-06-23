@@ -23,7 +23,7 @@ $ sudo opscode-reporting-ctl reconfigure
 $ sudo chef-server-ctl reconfigure  
 ```
 
-2) 创建push-jobs的cookbbok（下载）
+2) 创建push-jobs的cookbook（下载）
 
 ```
 $ cd /data/work-chef/chef-repo/cookbooks
