@@ -40,10 +40,10 @@ summary: 使用Zabbix监控tomcat。
 在zabbix server的web界面1）	下载并导入模版
 
 ```使用zabbix自带的监控项目部分监控项不能获取到数据，故需要自定义一个模版。模板下载地址如下：http://172.16.66.13/scripts/JMX_templates.xml```2）	在zabbix server添加被监控服务器的jmx接口```配置端口为：12345配置如图：```
-![monitor-java-setting](https://www.os4u.info/blog/monitor/images/monitor-java-setting.jpeg)
+![monitor-java-setting](https://www.os4u.info/blog/monitor/images/monitor-java-setting.jpeg)
 3）	将模版应用到具体服务器（略）
 4）	效果如下图
-![monitor-java-effect](https://www.os4u.info/blog/monitor/images/monitor-java-effect.jpeg)##### 六、	问题处理：
+![monitor-java-effect](https://www.os4u.info/blog/monitor/images/monitor-java-effect.jpeg)##### 六、	问题处理：
 
 ```查看jmx参数图时会出现乱码。zabbix图片中中文乱码解决如下：http://blog.chinaunix.net/uid-11121450-id-3296646.html
 ```
