@@ -44,3 +44,8 @@ chef-server-ctl reconfigure
 
 ***参考文件***
 > [https://d2avhevdwylo4t.cloudfront.net/config_rb_manage.html](https://d2avhevdwylo4t.cloudfront.net/config_rb_manage.html)
+
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 
