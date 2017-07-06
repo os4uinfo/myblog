@@ -2,7 +2,7 @@
 author: os4uinfo
 head: https://os4u.info/blog/img/sun.png
 date: 2017-07-06
-title: H3C的POE功能配置
+title: H3C的POE异常问题解决及配置
 tags: Network
 images: https://os4u.info/blog/img/sun.png
 category: H3C
