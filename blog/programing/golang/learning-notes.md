@@ -96,7 +96,7 @@ func main() {
 	go sum(values[len(values)/2:], resultChan)
 	go sum(values[:len(values)/2], resultChan)
 	fmt.Println(values[:len(values)/4])
-	sum1, sum2, sum3, sum4 := <-resultChan, <-resultChan
+	sum1, sum2 := <-resultChan, <-resultChan
 	fmt.Println("result:", sum1, sum2, sum1+sum2)
 }
 -----------------------------VS----------------------------------------
