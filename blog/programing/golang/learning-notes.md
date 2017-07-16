@@ -1,7 +1,7 @@
 <!--
 author: os4uinfo
 head: https://os4u.info/blog/img/sun.png
-date: 2017-06-19
+date: 2017-07-16
 title: Golang 使用笔记（不断更新中）
 tags: golang
 images: https://os4u.info/blog/img/sun.png
@@ -75,6 +75,52 @@ func main() {
 1423353600
 ```
 
+### 3. Channel
+
+```
+package main
+
+import "fmt"
+
+func sum(values []int, resultChan chan int) {
+	sum := 0
+	for _, value := range values {
+		sum += value
+	}
+	resultChan <- sum
+}
+
+func main() {
+	values := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	resultChan := make(chan int, 3)
+	go sum(values[len(values)/2:], resultChan)
+	go sum(values[:len(values)/2], resultChan)
+	fmt.Println(values[:len(values)/4])
+	sum1, sum2, sum3, sum4 := <-resultChan, <-resultChan
+	fmt.Println("result:", sum1, sum2, sum1+sum2)
+}
+-----------------------------VS----------------------------------------
+package main
+
+import "fmt"
+
+func sum(values []int) int {
+	sum := 0
+	for _, value := range values {
+		fmt.Println(value)
+		sum += value
+	}
+	return sum
+}
+
+func main() {
+	values := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	sum1 := sum(values[len(values)/2:])
+	sum2 := sum(values[:len(values)/2])
+	fmt.Println("Result: ", sum1, sum2, sum1+sum2)
+}
+
+```
 
 
 ![微信公众号](https://www.os4u.info/wx.jpg) 
