@@ -68,3 +68,11 @@ tar --strip-components=1 -C ~/rpmbuild/SPECS/ --no-anchored -xvjf ~/rpmbuild/SOU
 ```
 rpmbuild -ba ~/rpmbuild/SPECS/ceph.spec
 ```
+
+### 4. 参考资料：
+>
+>[http://docs.ceph.com/docs/jewel/install/build-ceph/](http://docs.ceph.com/docs/jewel/install/build-ceph/)
+
+![微信公众号](https://www.os4u.info/wx.jpg) 
+
+:) 微信扫一扫 关注公众号 
