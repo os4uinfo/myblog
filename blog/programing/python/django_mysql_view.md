@@ -24,6 +24,7 @@ class MyViewModel(models.Model):
         managed = False
         db_table = 'MyView' # your view name
 managed = False will cause python manage.py syncdb to ignore that model for sync'ing.
+
 ```
 
 
